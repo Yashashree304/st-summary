@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-pip install streamlit
-pip install eventregistry
-pip install transformers
-
-
 import streamlit as st
 from eventregistry import EventRegistry, QueryArticlesIter, QueryItems
 from transformers import pipeline
