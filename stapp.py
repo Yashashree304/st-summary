@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-
-!pip install eventregistry
-!pip install transformers
+pip install streamlit
+pip install eventregistry
+pip install transformers
 
 
 import streamlit as st
