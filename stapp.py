@@ -2,17 +2,9 @@
 import streamlit as st
 from eventregistry import EventRegistry, QueryArticlesIter, QueryItems
 from transformers import pipeline
-import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
-# Access the API key from the environment variable
-api_key = os.getenv("API_KEY")
 
 # Initialize Event Registry with your API key
-er = EventRegistry(apiKey=api_key)
+er = EventRegistry(apiKey='')
 
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
