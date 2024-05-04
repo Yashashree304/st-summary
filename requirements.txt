@@ -1,3 +1,4 @@
 streamlit
 eventregistry
 transformers
+python-dotenv
