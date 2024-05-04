@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-!pip install streamlit
+
 !pip install eventregistry
 !pip install transformers
 
