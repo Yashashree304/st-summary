@@ -51,7 +51,7 @@ def main():
                 # Check if the article title is not already in the fetched titles set
                 if article['title'] not in fetched_titles:
                     # Summarize the article using the summarization pipeline
-                    summary_output = summarizer(' '.join(article['body'].split()[:700]), max_length=150, min_length=30, do_sample=False)
+                    summary_output = summarizer(' '.join(article['body'].split()[:650]), max_length=150, min_length=30, do_sample=False)
 
                     # Check if the summarizer output is valid
                     if summary_output and isinstance(summary_output, list) and len(summary_output) > 0:
@@ -66,7 +66,7 @@ def main():
                                 "Date": article['date'],
                                 "Similarity": article['sim']
                             })
-                            fetched_titles.add(article['title'])  # Add the title to the fetched titles set
+                    fetched_titles.add(article['title'])  # Add the title to the fetched titles set
 
         # Display the fetched articles with summaries
         st.subheader('Recent Article Summaries:')
